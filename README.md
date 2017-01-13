@@ -1,3 +1,7 @@
-# My Awesome Book
+# Docker 101 - Workshop Guide
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Workshop Guide for docker beginners.
+
+Prepared by __@kunalkushwaha__
+
+Source of contents is Docker Documentation.

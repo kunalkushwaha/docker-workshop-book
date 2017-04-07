@@ -2,7 +2,7 @@
 In hello-world section, we created a container, which prints some messages.
 
 Lets run something serious now!<br>
-How about running lightweight linux distro ``alpine``?
+How about running lightweight [linux distro ``alpine``](https://alpinelinux.org/)?
 
 Irrespective of what OS you are running on host, we will run an ``alpine`` container.
 
@@ -103,7 +103,7 @@ Irrespective of what OS you are running on host, we will run an ``alpine`` conta
     7c69dd806a5c4a042530caa600ebcc2c9b865129123475538dc71ccdf8a78056
     ```
 
-    You see, it prints a 64 hex digit number, This is basically Container id assigned to your container.
+    You see, it prints a 64 digit hex string, This is basically Container id assigned to your container.
 
     Now you can see status of your newly created container by ``docker ps`` command.
 
@@ -114,7 +114,7 @@ Irrespective of what OS you are running on host, we will run an ``alpine`` conta
     ```
 
     As you can see our container named "test" is running with status "Up".<br>
-    One more thing you will observe, ``container id`` shown is output have only 12 hex digits, which is first 12 digits of 64 digit hex number.<br>
+    One more thing you will observe, ``container id`` shown is output have only 12 digit hex  , which is first 12 digits of 64 digit hex string.<br>
     Normally that is sufficient to identify container on single host.
 
     __Connecting to a running container__<br>
@@ -213,7 +213,21 @@ Irrespective of what OS you are running on host, we will run an ``alpine`` conta
     b2cca4a26312        hello-world         "/hello"            4 hours ago         Exited (0) 4 hours ago                         distracted_mcnulty
     ```
 
-So in this section we saw, how to run containers and do various operations on container.<br>
+    So in this section we saw, how to run containers and do various operations on container.<br>
+--------------
+__Assignment__
+
+1. Create a ubuntu container in interactive mode with name "ubuntu".
+    - Type hostname.
+    - exit from container.
+    - delete the container.! (_hint: You may require to do something before this?_)
+
+2. create a fedora container in background mode with name "fedora" with command ``top``.
+    - print the hostname of "fedora" container using ``docker exec`` command. (_hint: No need to enter into container using ``sh/bash``_)
+    - stop the container.
+    - Check output of container using ``docker logs``.
+-------------------------------
+
 It is highly recommended to explore other commands that docker offer for container manipulation/management.<br>
 You can find all such commands by typing ``$ docker container --help``, Also explore all options of ``docker run`` command.
 
